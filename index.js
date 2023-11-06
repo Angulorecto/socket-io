@@ -4,5 +4,5 @@ const http = require('http');
 const server = http.createServer(app);
 
 app.get('/', (req, res) => {
-  res.send('test.html');
+  res.sendFile(__dirname + '/test.html');
 });
